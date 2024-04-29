@@ -1,0 +1,27 @@
+[package]
+name = "max31855-rs"
+description = "MAX31855 Cold-Junction Compensated Thermocouple-to-Digial Converter"
+version = "0.1.0"
+authors = ["Dalton C. <dpcaron99@gmail.com>"]
+repository = "https://github.com/dolphindalt/max31855"
+edition = "2021"
+categories = [
+    "embedded",
+    "hardware-support",
+    "no-std"
+]
+keywords = [
+    "embedded-hal-driver",
+    "max31855"
+]
+
+[dependencies]
+embedded-hal = "1.0.0"
+bit_field = "0.10.1"
+
+[features]
+default = []
+std = []
+
+[dev-dependencies]
+linux-embedded-hal = { version = "0.4", features = ["spidev"] }
