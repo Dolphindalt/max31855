@@ -12,4 +12,6 @@ fn main() {
     let thermo_c = max_data.thermo_temperature();
 
     println!("Got an ambient temperature of {} C and thermocouple temperature of {} C", ambient_c, thermo_c);
+
+    std::thread::sleep(std::time::Duration::from_nanos(250));
 }
