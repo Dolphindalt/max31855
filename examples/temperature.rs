@@ -13,5 +13,5 @@ fn main() {
 
     println!("Got an ambient temperature of {} C and thermocouple temperature of {} C", ambient_c, thermo_c);
 
-    std::thread::sleep(std::time::Duration::from_nanos(250));
+    std::thread::sleep(std::time::Duration::from_millis(500));
 }
